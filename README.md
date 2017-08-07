@@ -79,7 +79,7 @@ function addTodo(todo) {
 }
 ```
 
-So in the above function, we can imagine generating actions with different payload properties depending on what we pass to to the addTodo function.
+So in the above function, we can imagine generating actions with different payload properties depending on what we pass to the addTodo function.
 
 ```javascript
 addTodo('buy groceries');
