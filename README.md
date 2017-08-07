@@ -12,7 +12,7 @@ Actions are just plain JavaScript objects, but that doesn't mean we should ignor
 
 # Purpose of Actions
 
-So as you know, we've been dispatching actions to our store to indicate the changes we would to make to our state. In this way, actions almost feel like the request object or the parameters hash that you would see in a web application like ruby on rails.  
+So as you know, we've been dispatching actions to our store to indicate the changes we would make to our state. In this way, actions almost feel like the request object or the parameters hash that you would see in a web application like ruby on rails.  
 
 In __Rails__, a user clicking on a link kicks off a request, and that request is ultimately passed to the controller, who then has the option of changing the database. In __Redux__, a user may click on a button which dispatches an action, and the reducer would take information from that action to change the state. You saw in the last section that simply by placing a __console.log__ in our reducer, we could see a history of every action that was passed to the reducer, making our debugging job easier.
 
