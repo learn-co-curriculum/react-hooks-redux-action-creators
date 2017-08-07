@@ -1,14 +1,12 @@
-Review and Dive into Actions
-==============
+# Review and Dive into Actions
 
 In this lesson, we will discuss:
-
-  * The properties of an action
-  * How to use action creators to create an action.
+* The properties of an action
+* How to use action creators to create an action.
 
 ## Introduction
 
-Actions are just plain JavaScript objects, but that doesn't mean we should ignore them. In this section, we'll discuss the properties of actions, and how to use functions to create actions.
+Actions are just **p**lain **o**ld **J**avaScript **o**bjects (POJOs), but that doesn't mean we should ignore them. In this section, we'll discuss the properties of actions, and how to use functions to create actions.
 
 # Purpose of Actions
 
@@ -18,7 +16,7 @@ In __Rails__, a user clicking on a link kicks off a request, and that request is
 
 # Structuring Actions
 
-Now an action is simply a plain javascript object that has a property of type. The reducer uses this type property to see what it should do. Here is an example of a valid action:
+Now an action is simply a POJO that has a property of type. The reducer uses this type property to see what it should do. Here is an example of a valid action:
 
 ```javascript
 const increaseCount = { type: 'INCREASE_COUNT' }
@@ -55,7 +53,7 @@ function reducer(state = {
 
 # Action Creators
 
-Ok, now we know that our actions are simply a plain JavaScript object (POJO) with at least one property called type. An example of using our actions is `store.dispatch({ type: 'INCREASE_COUNT' })`. Well what if we do the following.
+Ok, now we know that our actions are simply a POJO with at least one property called type. An example of using our actions is `store.dispatch({ type: 'INCREASE_COUNT' })`. Well what if we do the following.
 
 ```javascript
 
