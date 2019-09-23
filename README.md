@@ -15,7 +15,7 @@ and how to use functions to create actions.
 So as you know, we've been dispatching actions to our store to indicate the
 changes we would make to our state. In this way, actions almost feel like the
 request object or the parameters hash that you would see in a web application
-like ruby on rails.  
+like Ruby on Rails.  
 
 In __Rails__, a user clicking on a link kicks off a request, and that request is
 ultimately passed to the controller, who then has the option of changing the
