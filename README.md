@@ -18,7 +18,7 @@ request object or the parameters hash that you would see in a web application
 like Ruby on Rails.  
 
 In __Rails__, a user clicking on a link kicks off a request, and that request is
-ultimately passed to the controller, who then has the option of changing the
+ultimately passed to the controller, which is responsible for changing the
 database. In __Redux__, a user may click on a button which dispatches an action,
 and the reducer would take information from that action to change the state. You
 saw in the last section that simply by placing a __console.log__ in our reducer,
@@ -41,8 +41,8 @@ Now one can simply dispatch this action, for it to be handled by the reducer.
 store.dispatch(increaseCount)
 ```
 
-Remember that the store has a dispatch action, which passes the action to the
-reducer, who then runs its switch state to decide what to do.
+Remember that the store has a dispatch method, which passes the action to the
+reducer, which then runs its switch statement to decide what to do.
 
 ```javascript
 
@@ -82,7 +82,7 @@ store.dispatch(increaseCount());
 
 Ok, so in the above lines of code we define a function called
 `increaseCount()` whose job it is to return an action. Then we execute the
-`increaseCount()` function, who returns that action, and we dispatch that
+`increaseCount()` function, which returns that action, and we dispatch that
 action to the store. If you think that this is equivalent to `store.dispatch({
 type: 'INCREASE_COUNT' })`, you are right.  
 
@@ -120,5 +120,3 @@ store.dispatch(addTodo('buy groceries'));
 
 That would return the action `{ type: 'ADD_TODO', todo: 'buy groceries' }`,
 which we then send to the dispatch function.  
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/redux-action-creators'>Redux Action Creators</a> on Learn.co and start learning to code for free.</p>
