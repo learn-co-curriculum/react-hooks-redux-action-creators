@@ -35,14 +35,15 @@ action:
 const increaseCount = { type: 'INCREASE_COUNT' }
 ```
 
-Now one can simply dispatch this action, for it to be handled by the reducer.
+Remember that the store has a dispatch method which we can now use to dispatch 
+this action for it to be handled by the reducer.
 
 ```javascript
 store.dispatch(increaseCount)
 ```
 
-Remember that the store has a dispatch method, which passes the action to the
-reducer, which then runs its switch statement to decide what to do.
+The dispatch method passes the action to the reducer, which then runs its 
+switch statement to decide what to do.
 
 ```javascript
 
