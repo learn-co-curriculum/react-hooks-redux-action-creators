@@ -10,7 +10,7 @@ Actions are just **Plain Old JavaScript Objects** (POJOs), but that doesn't mean
 we should ignore them. In this section, we'll discuss the properties of actions,
 and how to use functions to create actions.
 
-# Purpose of Actions
+## Purpose of Actions
 
 So as you know, we've been dispatching actions to our store to indicate the
 changes we would make to our state. In this way, actions almost feel like the
@@ -25,7 +25,7 @@ saw in the last section that simply by placing a __console.log__ in our reducer,
 we could see a history of every action that was passed to the reducer, making
 our debugging job easier.
 
-# Structuring Actions
+## Structuring Actions
 
 Now an action is simply a POJO that has a property of type. The reducer uses
 this type property to see what it should do. Here is an example of a valid
@@ -66,7 +66,7 @@ function reducer(state = {
 }
 ```
 
-# Action Creators
+## Action Creators
 
 Ok, now we know that our actions are simply a POJO with at least one property
 called type. An example of using our actions is `store.dispatch({ type:
