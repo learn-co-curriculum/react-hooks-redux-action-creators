@@ -83,7 +83,7 @@ store.dispatch(incrementCount());
 ```
 
 Ok, so in the above lines of code we define a function called `incrementCount()`
-whose job it is to return an action. Then we execute the `incrementCount()`
+whose job is to return an action. Then we execute the `incrementCount()`
 function, which returns that action, and we dispatch that action to the store.
 If you think that this is equivalent to
 `store.dispatch({ type: 'counter/increment' })`, you are right.
