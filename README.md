@@ -1,9 +1,9 @@
 # Review and Dive into Actions
 
-In this lesson, we will discuss:
+## Learning Goals
 
-- The properties of an action
-- How to use action creators to create an action.
+- Define the important properties of an action
+- Use action creators to create an action
 
 ## Introduction
 
